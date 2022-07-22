@@ -7,8 +7,7 @@
 
 <script>
 // import { HelloWorld } from '../lib/main.js'
-import { HelloWorld } from '../dist/my-lib.js'
-
+import {HelloWorld} from 'sdk-test'
 export default {
   name: 'App',
   components: {

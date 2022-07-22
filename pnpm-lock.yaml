@@ -9,6 +9,7 @@ specifiers:
   core-js: ^3.8.3
   eslint: ^7.32.0
   eslint-plugin-vue: ^8.0.3
+  sdk-test: git+ssh://git@github.com:AnselRain/sdk-test.git
   vite: ^3.0.2
   vite-plugin-vue2: ^2.0.2
   vue: ^2.6.14
@@ -16,6 +17,7 @@ specifiers:
 
 dependencies:
   core-js: registry.npmmirror.com/core-js/3.23.5
+  sdk-test: github.com/AnselRain/sdk-test/373614865c826d65af43bf247bea99e202c8328e
   vite: registry.npmmirror.com/vite/3.0.2
   vue: registry.npmmirror.com/vue/2.7.8
 
@@ -31,6 +33,21 @@ devDependencies:
   vue-template-compiler: registry.npmmirror.com/vue-template-compiler/2.7.8
 
 packages:
+
+  github.com/AnselRain/sdk-test/373614865c826d65af43bf247bea99e202c8328e:
+    resolution: {tarball: https://codeload.github.com/AnselRain/sdk-test/tar.gz/373614865c826d65af43bf247bea99e202c8328e}
+    name: vue2-sdk
+    version: 0.1.0
+    dependencies:
+      core-js: registry.npmmirror.com/core-js/3.23.5
+      vite: registry.npmmirror.com/vite/3.0.2
+      vue: registry.npmmirror.com/vue/2.7.8
+    transitivePeerDependencies:
+      - less
+      - sass
+      - stylus
+      - terser
+    dev: false
 
   registry.nlark.com/@nodelib/fs.scandir/2.1.5:
     resolution: {integrity: sha1-dhnC6yGyVIP20WdUi0z9WnSIw9U=, registry: http://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@nodelib/fs.scandir/download/@nodelib/fs.scandir-2.1.5.tgz}
