@@ -6,7 +6,8 @@
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// import { HelloWorld } from '../lib/main.js'
+import { HelloWorld } from '../dist/my-lib.js'
 
 export default {
   name: 'App',
